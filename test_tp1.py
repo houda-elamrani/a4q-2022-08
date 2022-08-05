@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-def test_open_chrome():
+def open_chrome():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.carrefour.fr")
@@ -23,7 +23,7 @@ def test_open_chrome():
     time.sleep(2)
     driver.quit()
 
-def test_css_correction():
+def css_correction():
     driver = webdriver.Chrome()
 
     driver.maximize_window()
